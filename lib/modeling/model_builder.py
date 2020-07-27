@@ -76,7 +76,7 @@ class Generalized_RCNN(nn.Module):
         self.mapping_to_detectron = None
         self.orphans_in_detectron = None
 
-        # Backbone for feature extraction
+        # Backbone for feature extraction,比如使用ResNet网络作为网络backbone
         self.Conv_Body = get_func(cfg.MODEL.CONV_BODY)()
 
         # Region Proposal Network
